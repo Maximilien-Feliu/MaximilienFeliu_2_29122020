@@ -1,0 +1,171 @@
+/*général*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+#bloc_page{
+    width: 1200px;
+    margin: auto;
+}
+
+/*header- Logo et nav*/
+
+#logo-nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#logo-nav img{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 104px;
+    height: 49px;
+}
+
+#ancres{
+    display: flex;
+    list-style: none;
+}
+
+#ancres li{
+    margin-left: 60px;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#ancres a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#ancres a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 30px;
+}
+
+#signup{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+/*header- Titre et Barre de recherche*/
+
+h1{
+    margin-bottom: 0px;
+}
+
+h1 + p{
+    margin-top: 7px;
+}
+
+.search{
+    display: flex;
+    align-items: baseline;
+}
+
+#pos{
+    background-color: #F2F2F2;
+    padding: 8px 10px 11px 15px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+button{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#city{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #F2F2F2;
+}
+
+#city:focus{
+    outline: none;
+}
+
+::placeholder{
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+/*header- Filtres et info*/
+
+#filters{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#filters #filter-li{
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 20px;
+}
+
+#filter-li li{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.circle{
+    height: 40px;
+    width: 40px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    position: relative;
+    left: 16px;
+}
+
+.text-li{
+    
+    font-weight: bold;
+    border: 3px solid #F2F2F2;
+    padding: 8px 15px 8px 28px;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logements-dispo{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logements-dispo p{
+    margin-left: 0.8em;
+}
+
+.icon-info{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+
+.icon-info i{
+    font-size: 70%;
+}
