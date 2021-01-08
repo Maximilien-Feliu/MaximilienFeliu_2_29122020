@@ -55,25 +55,32 @@ a{
 #ancres{
     display: flex;
     list-style: none;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
 }
 
 #ancres li{
-    margin-left: 40px;
-    padding-top: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #ancres a{
     color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.1em;
 }
 
 #ancres a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 #signup{
@@ -174,6 +181,7 @@ button{
 #filter-li li:hover{
     opacity: 70%;
     font-size: 2em;
+    cursor: pointer;
 }
 
 .logements-dispo{
@@ -263,7 +271,7 @@ a .hebergement_link{
     object-fit: cover;
 }
 
-.bloc_stars{
+.hebergement_link .bloc_stars{
     margin-left: 0.8em;
     margin-top: 0.4em;
 }
@@ -313,7 +321,6 @@ a:visited{ /*pour les étoiles*/
     width: 88%;
     display: flex;
     justify-content: space-between;
-
 }
 
 #vignettes_pop{
@@ -355,6 +362,9 @@ a .pop_link{
     width: 42%;
     height: 100%;
     font-size: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .link_info h3, .link_info p{
@@ -368,7 +378,13 @@ a .pop_link{
 
 .link_info p{
     margin-top: 5px;
-    margin-bottom: 2.3em;
+}
+
+.link_info .bloc_stars{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
 }
 
 /*Section- Activités*/
