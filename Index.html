@@ -5,9 +5,11 @@
     <meta charset="UTF-8" />
     <title>Réservia</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="(min-width: 992px) and (max-width: 1140px)" href="Responsive.css" />
-    <link rel="stylesheet" media="(min-width: 769px) and (max-width: 991px)" href="Responsive.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="Responsive.css" />
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1150px)" href="Responsive.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="Responsive.css" />
+    <link rel="stylesheet" media="screen and (min-width: 375px) and (max-width: 768px)" href="Responsive.css" />
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="Responsive.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3ec31e340a.js" crossorigin="anonymous"></script>
@@ -24,7 +26,7 @@
                     <ul id="ancres">
                         <li><a href="#hebergement-marseille">Hébergements</a></li>
                         <li><a href="#activites">Activités</a></li>
-                        <li><a href="#"><span id="signup">S'inscrire</span></a></li>
+                        <li id="ancres_phone_signup"><a href="#"><span id="signup">S'inscrire</span></a></li>
                     </ul>
                 </nav>
 
@@ -41,36 +43,44 @@
                     <label for="city" id="pos">
                         <i class="fas fa-map-marker-alt"></i>
                     </label>
-                    <input type="text" name="city" id="city" placeholder="Marseille, France" maxlength="70" />
+
+                    <div id="city-container">
+                        <input type="text" name="city" id="city" placeholder="Marseille, France" maxlength="100" />
+                    </div>
+
+                    <button type="button" id="search_button">
+                        <span class="search_phone_hide">Rechercher</span>
+                        <span class="search_phone"><i class="fas fa-search"></i></span>
+                    </button>
 
                 </form>
-
-                <button form="search-bar" type="button">Rechercher</button>
 
             </div>
 
             <div id="filters">
 
                 <h3>Filtres</h3> <!--Filtres non fonctionnels-->
-                <ul id="filter-li">
-                    <li>
-                        <div class="circle"><i class="fas fa-money-bill-wave"></i></div>
-                        <div class="text-li">&Eacute;conomique</div>
-                    </li>
-                    <li>
-                        <div class="circle"><i class="fas fa-child"></i></div>
-                        <div class="text-li">Familial</div>
-                    </li>
-                    <li>
-                        <div class="circle"><i class="fas fa-heart"></i></div>
-                        <div class="text-li">Romantique</div>
-                    </li>
-                    <li>
-                        <div class="circle"><i class="fas fa-dog"></i></div>
-                        <div class="text-li">Animaux autorisés</div>
-                    </li>
-                </ul>
+                 
+                    <ul id="filters-li">
 
+                        <li>
+                            <div class="circle"><i class="fas fa-money-bill-wave"></i></div>
+                            <div class="text-li">&Eacute;conomique</div>
+                        </li>
+                        <li id="filters_phone">
+                            <div class="circle"><i class="fas fa-child"></i></div>
+                            <div class="text-li">Familial</div>
+                        </li>
+                        <li>
+                            <div class="circle"><i class="fas fa-heart"></i></div>
+                            <div class="text-li">Romantique</div>
+                        </li>
+                        <li>
+                            <div class="circle"><i class="fas fa-dog"></i></div>
+                            <div class="text-li">Animaux autorisés</div>
+                        </li>
+        
+                    </ul>
             </div>
 
             <div class="logements-dispo">
@@ -88,7 +98,7 @@
             
             <div id="hebergement_section">
                 
-                <h2 class="hors-vignettes">Hébergements à Marseille</h2>
+                <h2 class="hors-vignettes"><span id="hebergement-marseille">Hébergements à Marseille</span></h2>
             
                 <div id="vignettes_hebergement">
                 
@@ -263,7 +273,7 @@
                 <div class="big_link_container">
 
                     <a href="#0">
-                        <div class="activites_big_link radius vignettes_shadow vignettes_hover">
+                        <div class="activites_big_link radius vignettes_shadow vignettes_hover activites_phone">
 
                             <img src="images/activites/4_small/vieux_port.jpg" alt="Image du Vieux Port" class="img_radius">
                             <h3>Vieux Port</h3>
@@ -276,7 +286,7 @@
                 <div class="activites_link_column">
 
                     <a href="#0">
-                        <div class="activites_medium_link radius vignettes_shadow vignettes_hover">
+                        <div class="activites_medium_link radius vignettes_shadow vignettes_hover activites_phone">
 
                             <img src="images/activites/4_small/Pomègues.jpg" alt="Image du Fort de Pomègues" class="img_radius">
                             <h3>Fort de Pomègues</h3>
@@ -285,7 +295,7 @@
                     </a>
 
                     <a href="#0">
-                        <div class="activites_small_link activites_marge radius vignettes_shadow vignettes_hover">
+                        <div class="activites_small_link activites_marge radius vignettes_shadow vignettes_hover activites_phone">
 
                             <img src="images/activites/4_small/Iles_du_Frioul.jpg" alt="Image des Iles du Frioul" class="img_radius">
                             <h3>&Icirc;les du Frioul</h3>
@@ -298,7 +308,7 @@
                 <div class="big_link_container">
 
                     <a href="#0">
-                        <div class="activites_big_link radius vignettes_shadow vignettes_hover">
+                        <div class="activites_big_link radius vignettes_shadow vignettes_hover activites_tablettes activites_phone">
 
                             <img src="images/activites/4_small/calanques.jpg" alt="Image du Parc National des Calanques" class="img_radius">
                             <h3>Parc National des Calanques</h3>
@@ -311,7 +321,7 @@
                 <div class="activites_link_column">
 
                     <a href="#0">
-                        <div class="activites_half_link radius vignettes_shadow vignettes_hover">
+                        <div class="activites_half_link radius vignettes_shadow vignettes_hover activites_tablettes activites_phone">
 
                             <img src="images/activites/4_small/notre_dame.jpg" alt="Image de Notre-Dame-de-la-Garde" class="img_radius">
                             <h3>Notre-Dame-de-la-Garde</h3>
@@ -320,7 +330,7 @@
                     </a>
 
                     <a href="#0">
-                        <div class="activites_half_link activites_marge radius vignettes_shadow vignettes_hover">
+                        <div class="activites_half_link activites_marge radius vignettes_shadow vignettes_hover activites_phone">
                             
                             <img src="images/activites/4_small/Longchamp.jpg" alt="Image du Parc Longchamp" class="img_radius">
                             <h3>Parc Longchamp</h3>

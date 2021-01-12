@@ -1,17 +1,8 @@
 /*Responsive pour petits écrans d'ordinateurs*/
 
-@media (min-width: 992px) and (max-width: 1140px){ 
-
-    body{
-        margin: auto;
-    }
-
-    #ancres{
-        width: auto;
-    }
+@media screen and (min-width: 992px) and (max-width: 1150px){ 
 
     #ancres li{
-        width: auto;
         margin-left: 4em;
     }
 
@@ -22,14 +13,11 @@
     #vignettes_hebergement, #vignettes_pop, .vignettes_activites{
         font-size: 89%;
     } 
-
-
-
 }
 
 /*Responsive pour les tablettes*/
 
-@media (min-width: 769px) and (max-width: 991px){ 
+@media screen and (min-width: 768px) and (max-width: 992px){ 
 
     #bloc_page{
         max-width: 100%;
@@ -37,16 +25,50 @@
     }
 
     #ancres{
-        width: auto;
+        margin-right: 5px;
     }
 
     #ancres li{
-        width: auto;
         margin-left: 4em;
+        margin-top: 1.5em;
+    }
+
+    #ancres a{
+        height: 4em;
+        align-items: center;
+    }
+
+    #ancres a:active{
+        border-top: none;
+        align-items: center;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+        width: 100%;
     }
 
     h1{
-        font-size: 1.4em;
+        font-size: 2em;
+    }
+
+    .search{
+        margin-top: 2em;
+    }
+
+    #filters{
+        margin-top: 2em;
+    }
+
+    #filters #filters-li{
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+
+    #filters-li li{
+        margin: 0;
+    }
+
+    #filters-li li:active{
+        color: #0065FC;
     }
 
     #section_one{
@@ -75,6 +97,10 @@
         margin-top: 1.5em;
     }
 
+    .activites_tablettes h3{
+        margin-top: 1em;
+    }
+
     .footer_container{
         width: 100%;
         margin: 0;
@@ -84,7 +110,443 @@
 
 /*Responsive pour les smartphones*/
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 375px) and (max-width: 768px){
 
+    #bloc_page{
+        max-width: 100%;
+        font-size: 1.3em;
+    }
+
+    h1, h2{
+        font-size: 1.5em;
+    }
+
+    ::placeholder{
+        font-size: 1em;
+    }
+
+    #logo-nav{
+        flex-direction: column;
+    }
+
+    #logo-nav img{
+        width: 40%;
+        height: 20%;
+        max-width: 104px;
+        margin-top: 10px;
+    }
    
+    #ancres{
+        width: 100%;
+        height: 4em;
+        padding: 0;
+        position: relative;
+    }
+
+    #ancres li{
+        width: 50%;
+        margin: 0;
+        align-items: center;
+    }
+
+    #ancres_phone_signup{
+        width: 100%;
+        position: absolute;
+        width: auto;
+        bottom: 5em;
+        right: 2px;
+    }
+
+    #ancres a{
+        height: 2em;
+        align-items: center;
+    }
+
+    #ancres_phone_signup a, #ancres_phone_signup a:hover{
+        position: absolute;
+        width: auto;
+        right: 0;
+    }
+
+    #ancres a:active{
+        border-top: none;
+        align-items: center;
+        height: 4em;
+        border-bottom: 2px solid #0065FC;
+        width: 100%;
+    }
+
+    #ancres_phone_signup a:active{
+        width: auto;
+    }
+
+    #ancres a:hover{
+        border-top: none;
+        color: black;
+    }
+
+    #search-bar{
+        width: 100%;
+    }
+
+    .search{
+        display: flex;
+        position: relative;
+        margin-top: 2em;
+    }
+    
+    .search_phone_hide{
+        display: none;
+    }
+
+    #search_button{
+        min-width: 25px;
+        width: 45px;
+        border-radius: 30%;
+        position: absolute;
+        right: 0;
+    }
+
+    .search_phone{
+        display: flex;
+    }
+
+    #pos{
+        min-width: 30px;
+        width: 45px;
+    }
+ 
+    #city-container{
+        height: 93%;
+        border: 1px solid #F2F2F2;
+        display: flex;
+        width: 100%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+
+    #city{
+        border: none;
+        width: 80%;
+    }
+
+    #filters{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filters h3{
+        margin-bottom: 0.2em;
+    }
+
+    #filters-li{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #filters_phone{
+        position: absolute;
+        left: 12em;
+    }
+
+    #filters-li li{
+        margin-bottom: 15px;
+    }
+
+    #section_one{                       /*section hebergements et populaires*/
+        flex-direction: column-reverse;
+    }
+
+    #pop_section, #hebergement_section, .vignettes_activites{
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    #hebergement_section{
+        background-color: inherit;
+        height: inherit;
+        margin: auto;
+    }
+
+    #hebergement_section .hors-vignettes, #activites{
+        margin-left: 0.8em;
+    }
+
+    #vignettes_hebergement{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #vignettes_hebergement a, #vignettes_pop a{
+        width: 95%;
+    }
+
+    #pop_section h2{
+        left: 0.8em;
+        width: 92%;
+    }
+
+    .vignettes_activites{               /*section activites*/         
+        flex-direction: column;
+        align-items: center;
+    }                        
+
+    .big_link_container, .activites_link_column{
+        width: 95%;
+        height: inherit;
+    }
+
+    .activites_phone{
+        height: 180px;
+        margin-bottom: 2em;
+    }
+
+    .activites_phone img{
+        height: 140px;
+    }
+
+    .activites_marge{
+        margin-top: inherit;
+    }
+
+    footer{                             /*footer*/
+        height: inherit;
+        max-width: 100%;
+        margin-top: 4em;
+    }
+
+    .footer_container{
+        flex-direction: column;
+        height: inherit;
+    }
 }
+
+/*Responsive pour petits écrans smartphones*/
+
+@media screen and (max-width: 375px){
+    
+    body{
+        font-size: 11px;
+    }
+
+    #bloc_page{
+        max-width: 100%;
+    }
+
+    h1, h2{
+        font-size: 1.5em;
+    }
+
+    ::placeholder{
+        font-size: 1em;
+    }
+
+    #logo-nav{
+        flex-direction: column;
+    }
+
+    #logo-nav img{
+        width: 40%;
+        height: 20%;
+        max-width: 104px;
+        margin-top: 10px;
+    }
+   
+    #ancres{
+        width: 100%;
+        height: 4em;
+        padding: 0;
+        position: relative;
+    }
+
+    #ancres li{
+        width: 50%;
+        margin: 0;
+        align-items: center;
+    }
+
+    #ancres_phone_signup{
+        width: 100%;
+        position: absolute;
+        width: auto;
+        bottom: 5em;
+        right: 2px;
+    }
+
+    #ancres a{
+        height: 2em;
+        align-items: center;
+    }
+
+    #ancres_phone_signup a, #ancres_phone_signup a:hover{
+        position: absolute;
+        width: auto;
+        right: 0;
+    }
+
+    #ancres a:active{
+        border-top: none;
+        align-items: center;
+        height: 4em;
+        border-bottom: 2px solid #0065FC;
+        width: 100%;
+    }
+
+    #ancres_phone_signup a:active{
+        width: auto;
+    }
+
+    #ancres a:hover{
+        border-top: none;
+        color: black;
+    }
+
+    #search-bar{
+        width: 100%;
+    }
+
+    .search{
+        display: flex;
+        position: relative;
+        margin-top: 2em;
+    }
+    
+    .search_phone_hide{
+        display: none;
+    }
+
+    #search_button{
+        min-width: 25px;
+        width: 45px;
+        border-radius: 30%;
+        position: absolute;
+        right: 0;
+    }
+
+    .search_phone{
+        display: flex;
+    }
+
+    #pos{
+        min-width: 30px;
+        width: 45px;
+    }
+ 
+    #city-container{
+        height: 93%;
+        border: 1px solid #F2F2F2;
+        display: flex;
+        width: 100%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+
+    #city{
+        border: none;
+        width: 80%;
+    }
+
+    #filters{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filters h3{
+        margin-bottom: 0.2em;
+    }
+
+    #filters-li{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #filters_phone{
+        position: absolute;
+        left: 12em;
+    }
+
+    #filters-li li{
+        margin-bottom: 15px;
+    }
+
+    .circle{
+        height: 25px;
+        width: 25px;
+    }
+
+    .text-li{
+        height: 20px;
+    }
+
+    #section_one{                       /*section hebergements et populaires*/
+        flex-direction: column-reverse;
+    }
+
+    #pop_section, #hebergement_section, .vignettes_activites{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #hebergement_section{
+        background-color: inherit;
+        height: inherit;
+        margin: auto;
+    }
+
+    #hebergement_section .hors-vignettes, #activites{
+        margin-left: 0.8em;
+    }
+
+    #vignettes_hebergement{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #vignettes_hebergement a, #vignettes_pop a{
+        width: 95%;
+    }
+
+    #pop_section h2{
+        left: 0.8em;
+        width: 92%;
+    }
+
+    .vignettes_activites{               /*section activites*/         
+        flex-direction: column;
+        align-items: center;
+    }                        
+
+    .big_link_container, .activites_link_column{
+        width: 95%;
+        height: inherit;
+    }
+
+    .activites_phone{
+        height: 180px;
+        margin-bottom: 2em;
+    }
+
+    .activites_phone img{
+        height: 140px;
+    }
+
+    .activites_marge{
+        margin-top: inherit;
+    }
+
+    footer{                             /*footer*/
+        height: inherit;
+        max-width: 100%;
+        margin-top: 4em;
+    }
+
+    .footer_container{
+        flex-direction: column;
+        height: inherit;
+    }
+ 
+}  
