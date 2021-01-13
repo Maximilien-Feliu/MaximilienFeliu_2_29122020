@@ -34,7 +34,7 @@
     }
 
     #ancres a{
-        height: 4em;
+        height: 3em;
         align-items: center;
     }
 
@@ -43,7 +43,11 @@
         align-items: center;
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
-        width: 100%;
+    }
+
+    #ancres a:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
     }
 
     h1{
@@ -68,6 +72,12 @@
     }
 
     #filters-li li:active{
+        color: #0065FC;
+    }
+
+    #filters-li li:hover{
+        opacity: inherit;
+        font-size: inherit;
         color: #0065FC;
     }
 
@@ -169,10 +179,10 @@
     }
 
     #ancres a:active{
-        border-top: none;
         align-items: center;
         height: 4em;
         border-bottom: 2px solid #0065FC;
+        color: #0065FC;
         width: 100%;
     }
 
@@ -182,7 +192,7 @@
 
     #ancres a:hover{
         border-top: none;
-        color: black;
+        border-bottom: 2px solid #0065FC;
     }
 
     #search-bar{
@@ -244,7 +254,7 @@
         flex-direction: column;
         padding: 0;
     }
-
+ 
     #filters_phone{
         position: absolute;
         left: 12em;
@@ -254,11 +264,21 @@
         margin-bottom: 15px;
     }
 
+    #filters-li li:active{
+        color: #0065FC;
+    }
+
+    #filters-li li:hover{
+        opacity: inherit;
+        font-size: inherit;
+        color: #0065FC;
+    }
+
     #section_one{                       /*section hebergements et populaires*/
         flex-direction: column-reverse;
     }
 
-    #pop_section, #hebergement_section, .vignettes_activites{
+    #pop_section, #hebergement_section, #section_two{
         width: 100%;
         font-size: 0.8em;
     }
@@ -387,11 +407,11 @@
     }
 
     #ancres a:active{
-        border-top: none;
         align-items: center;
         height: 4em;
         border-bottom: 2px solid #0065FC;
         width: 100%;
+        color: #0065FC;
     }
 
     #ancres_phone_signup a:active{
@@ -400,7 +420,7 @@
 
     #ancres a:hover{
         border-top: none;
-        color: black;
+        border-bottom: 2px solid #0065FC;
     }
 
     #search-bar{
@@ -472,6 +492,16 @@
         margin-bottom: 15px;
     }
 
+    #filters-li li:active{
+        color: #0065FC;
+    }
+
+    #filters-li li:hover{
+        opacity: inherit;
+        font-size: inherit;
+        color: #0065FC;
+    }
+
     .circle{
         height: 25px;
         width: 25px;
@@ -485,7 +515,7 @@
         flex-direction: column-reverse;
     }
 
-    #pop_section, #hebergement_section, .vignettes_activites{
+    #pop_section, #hebergement_section, #section_two{
         width: 100%;
         font-size: 1em;
     }
