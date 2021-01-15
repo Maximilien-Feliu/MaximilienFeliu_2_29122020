@@ -176,6 +176,7 @@ h1 + p{
     display: flex;
     list-style: none;
     position: relative;
+    flex-wrap: wrap;
     right: 20px;
     width: 100%;
 }
